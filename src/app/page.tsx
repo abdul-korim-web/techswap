@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import HowItWorks from "@/components/HowItWorks";
 import PriceTrends from "@/components/PriceTrends";
 import TopCategories from "@/components/TopCategories";
+import UserTrust from "@/components/UserTrust";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <PriceTrends/>
       <FeaturedProducts/>
       <HowItWorks/>
+      <UserTrust/>
     </div>
     
   );
