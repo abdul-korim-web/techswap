@@ -9,7 +9,7 @@ interface NavbarProps {
 
 export default function Navbar({ isLoggedIn = false, onLogout }: NavbarProps) {
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(true);
 
   useEffect(() => {
     if (isDarkMode) {
