@@ -1,3 +1,4 @@
+import FAQSection from "@/components/FAQSection";
 import FeaturedProducts from "@/components/FeaturedProducts";
 import Hero from "@/components/Hero";
 import HowItWorks from "@/components/HowItWorks";
@@ -14,6 +15,7 @@ export default function Home() {
       <FeaturedProducts/>
       <HowItWorks/>
       <UserTrust/>
+      <FAQSection/>
     </div>
     
   );
