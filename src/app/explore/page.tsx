@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ProductCard from "@/components/ProductCard";
 
-export interface IProduct {
+ interface IProduct {
   _id?: string;
   title: string;
   shortDescription: string;

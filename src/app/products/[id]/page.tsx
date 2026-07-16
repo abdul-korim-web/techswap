@@ -13,8 +13,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-// আপনার দেওয়া IProduct ইন্টারফেসের অবিকল রূপ
-export interface IProduct {
+ interface IProduct {
   _id?: string;
   title: string;
   shortDescription: string;

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import ProductCard from "./ProductCard";
 
-export interface IProduct {
+ interface IProduct {
   _id?: string;
   title: string;
   shortDescription: string;
