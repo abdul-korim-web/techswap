@@ -3,7 +3,7 @@ import Image from "next/image";
 
 
 export interface Product {
-  _id: string;
+  _id?: string; 
   title: string;
   shortDescription: string;
   price: number;
@@ -17,7 +17,6 @@ export interface Product {
   category: string;
   location: string;
 }
-
 interface ProductCardProps {
   product: Product;
 }
