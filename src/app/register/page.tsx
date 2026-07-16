@@ -44,7 +44,7 @@ export default function RegisterPage() {
     image: "https://example.com/image.png",
     role:formData.role,
     callbackURL: "/",
-});
+} as any );
      if (data?.token) {
   toast.success("Registration successful!"); 
   router.push("/")
