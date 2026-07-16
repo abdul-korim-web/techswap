@@ -126,16 +126,22 @@ export default function PriceTrends() {
                 />
 
                 <Tooltip
-                  contentStyle={{
-                    backgroundColor: "currentColor",
-                    borderRadius: "16px",
-                    border: "none",
-                    padding: "12px",
-                    boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1)",
-                  }}
-                  className="text-zinc-900 dark:text-white bg-white dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-850"
-                  labelClassName="font-black text-xs mb-1"
-                />
+  content={({ active, payload, label }) => {
+    if (active && payload && payload.length) {
+      return (
+        <div className="bg-white dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 p-3 rounded-xl shadow-lg text-zinc-900 dark:text-white text-xs">
+          <p className="font-black mb-1">{label}</p>
+          {payload.map((item: any, index: number) => (
+            <p key={index} className="font-medium" style={{ color: item.color }}>
+              {item.name}: {item.value}
+            </p>
+          ))}
+        </div>
+      );
+    }
+    return null;
+  }}
+/>
 
                 <Area
                   name="Avg Resale Price"
