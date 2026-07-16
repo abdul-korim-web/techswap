@@ -12,7 +12,7 @@ export default function Navbar() {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(true);
   
   const { data, isPending } = useSession();
-  const user = data?.user; 
+  const user = data?.user as any; 
   const isLoggedIn = !!user;
 
 
